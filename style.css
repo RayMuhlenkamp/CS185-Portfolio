@@ -1,0 +1,23 @@
+.page {
+    background-color: cornsilk;
+}
+
+.nav_bar {
+    display: flex;
+}
+.nav_bar > div {
+    padding: 10px;
+}
+
+.tab {
+    background-color: cornflowerblue;
+}
+
+.main_body {
+    display: flex;
+    background-color: burlywood;
+}
+
+.main_body > div {
+    padding: 10px;
+}
