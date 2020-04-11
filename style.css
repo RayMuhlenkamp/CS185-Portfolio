@@ -4,19 +4,72 @@
 
 .nav_bar {
     display: flex;
+    background-color: cornflowerblue;
 }
 .nav_bar > div {
     padding: 10px;
 }
 
 .tab {
-    background-color: cornflowerblue;
+    margin: auto;
 }
 
 .main_body {
     display: flex;
     background-color: burlywood;
 }
+
+.content_grid_3c{
+    background-color: burlywood;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.content_grid_2c{
+    background-color: burlywood;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.content_holder{
+    margin: auto;
+    border: 2px solid black;
+}
+
+.img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.vid {
+    display: block;
+    max-width: 100%;
+    max-height: 500px;
+    height: auto;
+}
+
+.bg_green{
+    background-color: darkgreen;
+}
+
+.span2c{
+    grid-column: span 2;
+}
+
+.span2r{
+    grid-row: span 2;
+}
+
+.span3r{
+    grid-row: span 3;
+}
+
+
 
 .main_body > div {
     padding: 10px;
