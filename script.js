@@ -17,18 +17,15 @@ function loadPage(){
 }
 
 function closeModal(){
-    var modal = document.getElementById("myImgModal")
-    modal.style.display = "none"
+    $("#myImgModal").hide()
 }
 
 function scroll() {
     if ($(window).scrollTop() > $(document).height()*.2) {
-        scrollButton = document.getElementById("scrollButton")
-        scrollButton.style.display = "block"
+        $("#scrollButton").show()
     }
-
     else {
-        scrollButton.style.display = "none"
+        $("#scrollButton").hide()
     }
 }
 
