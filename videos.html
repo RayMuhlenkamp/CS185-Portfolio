@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <html>
 
@@ -8,75 +10,64 @@
     Videos
 </title>
 
-<body class="page">
+<body class="page" onload="loadPage()">
 
-<div class="header">
-    <h1>Videos</h1>
-</div>
+    <div class="header">
+        <h1>Videos</h1>
+    </div>
 
-<p>Here are some videos to show you a little bit about myself!</p>
+    <p>Here are some videos to show you a little bit about myself!</p>
 
-<div class="nav_bar">
-    <div class="tab">
+    <div class="nav_bar">
         <a href="index.html">Home</a>
-    </div>
-    
-    <div class="tab">
         <a href="images.html">Images</a>
-    </div>
-
-    <div class="tab">
-        <a href="videos.html">Videos</a>
-    </div>
-
-    <div class="tab">
+        <a class="active" href="videos.html">Videos</a>
         <a href="playlists.html">Playlists</a>
     </div>
-</div>
 
 
-<div class="content_grid_2c">
-    <div class="content_holder span2r">
-        <video class="vid" controls>
-            <source src="src/video/IMG_1328.MOV">
-        </video>
-    </div>
+    <div class="content_grid">
+        <div class="content_holder span2r">
+            <video class="vid" controls>
+                <source src="src/video/IMG_1328.MOV">
+            </video>
+        </div>
 
-    <div class="content_holder span3r">
-        <video class="vid" controls>
-            <source src="src/video/catsper.mp4">
-        </video>
-    </div>
-    
-    <div class="content_holder">
-        <iframe class="vid" src="https://www.youtube.com/embed/P7817hJj2k0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+        <div class="content_holder span3r">
+            <video class="vid" controls>
+                <source src="src/video/catsper.mp4">
+            </video>
+        </div>
+        
+        <div class="content_holder">
+            <iframe class="vid" src="https://www.youtube.com/embed/P7817hJj2k0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-    <div class="content_holder">
-        <iframe class="vid" src="https://www.youtube.com/embed/1K7291lKOgU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+        <div class="content_holder">
+            <iframe class="vid" src="https://www.youtube.com/embed/1K7291lKOgU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-    <div class="content_holder">
-        <iframe class="vid" src="https://www.youtube.com/embed/M5uPENpAbl0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+        <div class="content_holder">
+            <iframe class="vid" src="https://www.youtube.com/embed/M5uPENpAbl0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-    <div class="content_holder span3r">
-        <video class="vid" controls>
-            <source src="src/video/spoider.mp4">
-        </video>
-    </div>
+        <div class="content_holder span3r">
+            <video class="vid" controls>
+                <source src="src/video/spoider.mp4">
+            </video>
+        </div>
 
-    <div class="content_holder span3r">
-        <video class="vid" controls>
-            <source src="src/video/facekick.mp4">
-        </video>
-    </div>
+        <div class="content_holder span3r">
+            <video class="vid" controls>
+                <source src="src/video/facekick.mp4">
+            </video>
+        </div>
 
 
-    
-    
-    
-</div>  
+        
+        
+        
+    </div>  
 
 
 </body>

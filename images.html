@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <html>
 
@@ -8,93 +10,88 @@
     Images
 </title>
 
-<body class="page">
+<body class="page" onload="loadPage()">
 
-<div class="header">
-    <h1>Images</h1>
-</div>
+    <div class="header">
+        <h1>Images</h1>
+    </div>
 
-<p>Here are some images to show you a little bit about myself!</p>
+    <p>Here are some images to show you a little bit about myself!</p>
 
-<div class="nav_bar">
-    <div class="tab">
+    <div class="nav_bar">
         <a href="index.html">Home</a>
-    </div>
-    
-    <div class="tab">
-        <a href="images.html">Images</a>
-    </div>
-
-    <div class="tab">
+        <a class="active" href="images.html">Images</a>
         <a href="videos.html">Videos</a>
-    </div>
-
-    <div class="tab">
         <a href="playlists.html">Playlists</a>
     </div>
-</div>
 
 
-<div class="content_grid_3c">
-    <div class="content_holder">
-        <img class="img" src="src/image/im_champ1.jpg">      
+    <div class="content_grid">
+        <div class="content_holder">
+            <img onclick="ImgModal(this.src)" class="img" src="src/image/im_champ1.jpg">      
+        </div>
+
+        <div class="content_holder">
+            <img onclick="ImgModal(this.src)" class="img" src="src/image/im_champ2.jpg">      
+        </div>
+
+        <div class="content_holder">
+            <img onclick="ImgModal(this.src)" class="img" src="src/image/im_champ3.jpg">      
+        </div>
+
+        <div class="content_holder bg_green">
+            <img onclick="ImgModal(this.src)" class="img" src="src/image/tshirt white.png">      
+        </div>
+        
+        <div class="content_holder bg_green">
+            <img onclick="ImgModal(this.src)" class="img" src="src/image/tshirt yellow.png">      
+        </div>
+
+        <div class="content_holder bg_green">
+            <img onclick="ImgModal(this.src)" class="img" src="src/image/tshirt black.png">      
+        </div>
+        
+        <div class="content_holder span2c">
+            <img onclick="ImgModal(this.src)" class="img" src="src/image/iv_music1.jpg">      
+        </div>
+        
+        <div class="content_holder ">
+            <img onclick="ImgModal(this.src)" class="img" src="src/image/mom.jpg">      
+        </div>
+
+        <div class="content_holder span2c">
+            <img onclick="ImgModal(this.src)" class="img" src="src/image/iv_music2.jpg">      
+        </div>
+
+        <div class="content_holder">
+            <img onclick="ImgModal(this.src)" class="img" src="src/image/seattle1.jpg">      
+        </div>
+
+        <div class="content_holder">
+            <img onclick="ImgModal(this.src)" class="img" src="src/image/seattle2.jpg">      
+        </div>
+
+        <div class="content_holder">
+            <img onclick="ImgModal(this.src)" class="img" src="src/image/seattle3.jpg">      
+        </div>
+
+        <div class="content_holder span2c">
+            <img onclick="ImgModal(this.src)" class="img" src="src/image/soccer.jpg">      
+        </div>
+
+        <div class="content_holder">
+            <img onclick="ImgModal(this.src)" class="img" src="src/image/polaroid.jpg">      
+        </div>
+
+        
+    </div>  
+
+    <div id="myImgModal" class="modal">
+        <span onclick="closeModal()" class="close">&times;</span>
+        <img class="modalContent" id="modalImg">
     </div>
 
-    <div class="content_holder">
-        <img class="img" src="src/image/im_champ2.jpg">      
-    </div>
-
-    <div class="content_holder">
-        <img class="img" src="src/image/im_champ3.jpg">      
-    </div>
-
-    <div class="content_holder bg_green">
-        <img class="img" src="src/image/tshirt white.png">      
-    </div>
-    
-    <div class="content_holder bg_green">
-        <img class="img" src="src/image/tshirt yellow.png">      
-    </div>
-
-    <div class="content_holder bg_green">
-        <img class="img" src="src/image/tshirt black.png">      
-    </div>
-    
-    <div class="content_holder span2c">
-        <img class="img" src="src/image/iv_music1.jpg">      
-    </div>
-    
-    <div class="content_holder span2r">
-        <img class="img" src="src/image/mom.jpg">      
-    </div>
-
-    <div class="content_holder span2c">
-        <img class="img" src="src/image/iv_music2.jpg">      
-    </div>
-
-    <div class="content_holder">
-        <img class="img" src="src/image/seattle1.jpg">      
-    </div>
-
-    <div class="content_holder">
-        <img class="img" src="src/image/seattle2.jpg">      
-    </div>
-
-    <div class="content_holder">
-        <img class="img" src="src/image/seattle3.jpg">      
-    </div>
-
-    <div class="content_holder span2c">
-        <img class="img" src="src/image/soccer.jpg">      
-    </div>
-
-    <div class="content_holder">
-        <img class="img" src="src/image/polaroid.jpg">      
-    </div>
-
-    
-</div>  
-
+    <button id="scrollButton" onclick="goToTop()" title="Back to top">Back to top!</button>>
 
 </body>
 

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <html>
 
@@ -8,44 +10,33 @@
     Welcome!
 </title>
 
-<body class="page">
+<body class="page" onload="loadPage()">
 
-<div class="header">
-    <h1>Welcome to my portfolio</h1>
-</div>
-
-<div class="nav_bar">
-    <div class="tab">
-        <a href="index.html">Home</a>
+    <div class="header">
+        <h1>Welcome to my portfolio</h1>
     </div>
-    
-    <div class="tab">
+
+    <div class="nav_bar">
+        <a class="active" href="index.html">Home</a>
         <a href="images.html">Images</a>
-    </div>
-
-    <div class="tab">
         <a href="videos.html">Videos</a>
-    </div>
-
-    <div class="tab">
         <a href="playlists.html">Playlists</a>
     </div>
-</div>
 
-<div class="main_body">  
-    <div>
-        <img src="src/image/ray linkedin.jpg">
-    </div>
+    <div class="main_body">  
+        <div>
+            <img onclick="ImgModal(this.src)" src="src/image/ray linkedin.jpg">
+        </div>
 
-    <div>
-        <p>
-            Hello! Welcome to my portfolio website. 
-            My name is Ray Muhlenkamp. I am a student at the University of California, Santa Barbara, studying Computer Science and German. 
-            I play bass in a band called Careless Cub, love to play soccer, and am a big fan of most things I do. 
-            I hope you enjoy your stay!
-        </p>
+        <div>
+            <p>
+                Hello! Welcome to my portfolio website. 
+                My name is Ray Muhlenkamp. I am a student at the University of California, Santa Barbara, studying Computer Science and German. 
+                I play bass in a band called Careless Cub, love to play soccer, and am a big fan of most things I do. 
+                I hope you enjoy your stay!
+            </p>
+        </div>
     </div>
-</div>
 
 </body>
 

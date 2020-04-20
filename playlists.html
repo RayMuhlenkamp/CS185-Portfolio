@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <html>
 
@@ -8,48 +10,52 @@
     Playlists
 </title>
 
-<body class="page">
+<body class="page" onload="loadPage()">
 
-<div class="header">
-    <h1>Playlists</h1>
-</div>
+    <div class="header">
+        <h1>Playlists</h1>
+    </div>
 
-<p>
-    Here are some of my favorite music playlists, for your listening pleasure!
-</p>
+    <p>
+        Here are some of my favorite music playlists, for your listening pleasure!
+    </p>
 
-<div class="nav_bar">
-    <div class="tab">
+    <div class="nav_bar">
         <a href="index.html">Home</a>
-    </div>
-    
-    <div class="tab">
         <a href="images.html">Images</a>
-    </div>
-
-    <div class="tab">
         <a href="videos.html">Videos</a>
+        <a class="active" href="playlists.html">Playlists</a>
     </div>
 
-    <div class="tab">
-        <a href="playlists.html">Playlists</a>
+    <div class="content_grid">
+        <div class="content_holder">
+            <iframe style="display:block;" src="https://open.spotify.com/embed/playlist/5Uhlzklmcnl8jRYh7cxdgX" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+
+        <div class="content_holder">
+            <iframe style="display:block;" src="https://open.spotify.com/embed/playlist/78KwttLhfegWgn3AwxxgEE" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>    
+        </div>
+
+        <div class="content_holder">
+            <iframe style="display:block;" src="https://open.spotify.com/embed/playlist/52dhfbnG3iKesB3pjJJNmr" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>    
+        </div>
+
+        <div class="content_holder">
+            <iframe style="display:block;" src="https://open.spotify.com/embed/playlist/3t6OGkyJEFLJMW3pLbtde8" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>    
+        </div>
+
+        <div class="content_holder">
+            <iframe src="https://open.spotify.com/embed/playlist/56qSt2tlxP25Chg3jMF5dD" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>        
+        </div>
+
+        <div class="content_holder">
+            <iframe src="https://open.spotify.com/embed/playlist/5hk1HuLPZrrYK5jQRCBtiW" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>        
+        </div>
+
+        <div class="content_holder">
+            <iframe src="https://open.spotify.com/embed/playlist/3ccZZQRqBzg1AWfK248Bzr" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>        
+        </div>
     </div>
-</div>
-
-<div class="content_grid_2c">
-    <div class="content_holder">
-        <iframe style="display:block;" src="https://open.spotify.com/embed/playlist/5Uhlzklmcnl8jRYh7cxdgX" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
-
-    <div class="content_holder">
-        <iframe style="display:block;" src="https://open.spotify.com/embed/playlist/78KwttLhfegWgn3AwxxgEE" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>    </div>
-
-    <div class="content_holder">
-        <iframe style="display:block;" src="https://open.spotify.com/embed/playlist/52dhfbnG3iKesB3pjJJNmr" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>    </div>
-
-    <div class="content_holder">
-        <iframe style="display:block;" src="https://open.spotify.com/embed/playlist/3t6OGkyJEFLJMW3pLbtde8" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>    </div>
-</div>
 
 </body>
 
