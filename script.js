@@ -3,6 +3,7 @@ function loadPage(){
     
     $(".img").on("click", function(e){
         $("#myImgModal").show()
+        $("#modalImg").attr("src", this.src)
         e.stopPropagation()
     })    
 
@@ -18,13 +19,6 @@ function loadPage(){
 function closeModal(){
     var modal = document.getElementById("myImgModal")
     modal.style.display = "none"
-}
-
-function ImgModal(src){
-    var modal = document.getElementById("myImgModal")
-    var img = document.getElementById("modalImg")
-    img.src = src
-    modal.style.display = "block"
 }
 
 function scroll() {
